@@ -3,6 +3,7 @@ services:
   mirakurun:
     build:
       context: data/mirakurun
+    image: ghcr.io/sobadon/mirakurun:custom-latest
     cap_add:
       - SYS_ADMIN
       - SYS_NICE
@@ -32,6 +33,7 @@ services:
       context: data/epgstation
       args:
         - CPUCORE=2
+    image: ghcr.io/sobadon/epgstation:custom-latest
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./data/epgstation/config:/app/config

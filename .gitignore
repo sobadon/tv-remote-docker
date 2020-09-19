@@ -1,0 +1,9 @@
+data/recorded
+data/epgstation/data
+data/epgstation/tumbnail
+data/epgstation/logs
+data/epgstation/db
+
+data/mirakurun/run
+data/mirakurun/opt
+data/mirakurun/app-data

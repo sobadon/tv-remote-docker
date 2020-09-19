@@ -1,0 +1,15 @@
+# https://github.com/Chinachu/Mirakurun/blob/master/doc/Configuration.md
+logLevel: 2 # integer -1: FATAL to 3: DEBUG
+maxLogHistory: 1000 # integer (lines)
+path: /var/run/mirakurun.sock # string or ~ (null) *Ignored in Docker
+port: 40772 # integer or ~ (null) *Ignored in Docker
+disableIPv6: false # boolean *Ignored in Docker
+highWaterMark: 25165824 # integer (bytes)
+overflowTimeLimit: 30000 # integer (ms)
+maxBufferBytesBeforeReady: 8388608 # integer (bytes)
+eventEndTimeout: 1000 # integer (ms)
+programGCInterval: 900000 # integer (ms)
+epgGatheringInterval: 900000 # integer (ms)
+epgRetrievalTime: 600000 # integer (ms)
+disableEITParsing: false # boolean
+

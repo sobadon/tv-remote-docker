@@ -1,0 +1,51 @@
+version: "3.7"
+services:
+  mirakurun:
+    build:
+      context: data/mirakurun
+    cap_add:
+      - SYS_ADMIN
+      - SYS_NICE
+    environment:
+      TZ: Asia/Tokyo
+      # LOG_LEVEL: "3"
+      # DEBUG: "true"
+    ports:
+      - 40772:40772
+      - 9229:9229
+    volumes:
+      - ./data/mirakurun/run/:/var/run/
+      - ./data/mirakurun/opt/:/opt/
+      - ./data/mirakurun/config/:/app-config/
+      - ./data/mirakurun/app-data/:/app-data/
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-T.so.conf:/bdp/BonDriver_Proxy-T0.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-T.so.conf:/bdp/BonDriver_Proxy-T1.so.conf
+    # restart: always
+    logging:
+      driver: json-file
+      options:
+        max-file: "1"
+        max-size: 10m
+
+  epgstation:
+    build:
+      context: data/epgstation
+      args:
+        - CPUCORE=2
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./data/epgstation/config:/app/config
+      - ./data/epgstation/data:/app/data
+      - ./data/epgstation/thumbnail:/app/thumbnail
+      - ./data/epgstation/logs:/app/logs
+      - ./data/recorded:/app/recorded
+      - ./data/epgstation/db:/app/db
+    environment:
+      TZ: "Asia/Tokyo"
+    depends_on:
+      - mirakurun
+    ports:
+      - "8888:8888"
+      - "8889:8889"
+    #user: "1000:1000"
+    #restart: always

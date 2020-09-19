@@ -1,0 +1,32 @@
+- name: ＴＯＫＹＯ　ＭＸ
+  type: GR
+  channel: '2'
+
+- name: フジテレビ
+  type: GR
+  channel: '8'
+
+- name: ＴＢＳ
+  type: GR
+  channel: '9'
+
+- name: テレビ東京
+  type: GR
+  channel: '10'
+
+- name: テレビ朝日
+  type: GR
+  channel: '11'
+
+- name: 日テレ
+  type: GR
+  channel: '12'
+
+- name: ＮＨＫＥテレ・東京
+  type: GR
+  channel: '6'
+
+- name: ＮＨＫ総合・東京
+  type: GR
+  channel: '5'
+

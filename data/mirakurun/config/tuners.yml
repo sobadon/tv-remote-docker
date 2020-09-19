@@ -1,0 +1,14 @@
+# https://github.com/Chinachu/Mirakurun/blob/master/doc/Configuration.md
+# BonDriverProxy(_Ex) を経由している場合はチャンネルスキャンが正常に完了しないため、TVTest の ch2 ファイルから予め手動で生成しておく
+# ここでは Server 側でデスクランブルされたものを受信する
+
+- name: Proxy-T_0
+  types:
+    - GR
+  command: recbond --driver /bdp/BonDriver_Proxy-T0.so B<channel> - -
+
+- name: Proxy-T_1
+  types:
+    - GR
+  command: recbond --driver /bdp/BonDriver_Proxy-T1.so B<channel> - -
+

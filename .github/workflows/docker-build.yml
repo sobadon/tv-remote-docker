@@ -3,6 +3,8 @@ name: Docker build image
 on:
   push:
     branches: master
+    paths-ignore:
+      - "*.md"
 
 env:
   DOCKER_BUILDKIT: 1

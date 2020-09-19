@@ -25,11 +25,13 @@ jobs:
         with:
           push: true
           context: data/mirakurun
+          file: data/mirakurun/Dockerfile
           tags: ghcr.io/sobadon/mirakurun:custom-latest
       - name: "[EPGStation] Push to GitHub Container Registry"
         uses: docker/build-push-action@v2
         with:
           push: true
           context: data/epgstation
+          file: data/epgstation/Dockerfile
           tags: ghcr.io/sobadon/epgstation:custom-latest
 

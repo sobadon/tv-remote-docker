@@ -7,3 +7,5 @@ data/epgstation/db
 data/mirakurun/run
 data/mirakurun/opt
 data/mirakurun/app-data
+
+.env

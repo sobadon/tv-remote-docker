@@ -21,8 +21,14 @@ services:
       - ./data/mirakurun/opt/:/opt/
       - ./data/mirakurun/config/:/app-config/
       - ./data/mirakurun/app-data/:/app-data/
-      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-T.so.conf:/bdp/BonDriver_Proxy-T0.so.conf
-      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-T.so.conf:/bdp/BonDriver_Proxy-T1.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-W3PE4-T.so.conf:/bdp/BonDriver_Proxy-W3PE4-T0.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-W3PE4-T.so.conf:/bdp/BonDriver_Proxy-W3PE4-T1.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-W3PE4-S.so.conf:/bdp/BonDriver_Proxy-W3PE4-S0.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-W3PE4-S.so.conf:/bdp/BonDriver_Proxy-W3PE4-S1.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-Q1UD-T.so.conf:/bdp/BonDriver_Proxy-Q1UD-T0.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-Q1UD-T.so.conf:/bdp/BonDriver_Proxy-Q1UD-T1.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-Q1UD-T.so.conf:/bdp/BonDriver_Proxy-Q1UD-T2.so.conf
+      - ./data/mirakurun/bdp-conf/BonDriver_Proxy-Q1UD-T.so.conf:/bdp/BonDriver_Proxy-Q1UD-T3.so.conf
     # restart: always
     logging:
       driver: json-file

@@ -1,32 +1,104 @@
-- name: ＴＯＫＹＯ　ＭＸ
+me: ＴＯＫＹＯ　ＭＸ
   type: GR
-  channel: '2'
+  channel: '65'
 
-- name: フジテレビ
+- name: チバテレビ
   type: GR
-  channel: '8'
+  channel: '66'
 
-- name: ＴＢＳ
+- name: テレビつくば
   type: GR
-  channel: '9'
-
-- name: テレビ東京
-  type: GR
-  channel: '10'
-
-- name: テレビ朝日
-  type: GR
-  channel: '11'
-
-- name: 日テレ
-  type: GR
-  channel: '12'
-
-- name: ＮＨＫＥテレ・東京
-  type: GR
-  channel: '6'
+  channel: '67'
 
 - name: ＮＨＫ総合・東京
   type: GR
-  channel: '5'
+  channel: '68'
+
+- name: ＮＨＫＥテレ・東京
+  type: GR
+  channel: '69'
+
+- name: ＮＨＫ総合・水戸
+  type: GR
+  channel: '70'
+
+- name: フジテレビ
+  type: GR
+  channel: '71'
+
+- name: ＴＢＳ
+  type: GR
+  channel: '72'
+
+- name: テレビ東京
+  type: GR
+  channel: '73'
+
+- name: テレビ朝日
+  type: GR
+  channel: '74'
+
+- name: 日テレ
+  type: GR
+  channel: '75'
+
+- name: NHK BS1
+  type: BS
+  channel: '17'
+  serviceId: 101
+
+- name: NHK BS1 (Sub)
+  type: BS
+  channel: '17'
+  serviceId: 102
+
+- name: ＮＨＫＢＳプレミアム
+  type: BS
+  channel: '4'
+  serviceId: 103
+
+- name: ＮＨＫＢＳプレミアム
+  type: BS
+  channel: '4'
+  serviceId: 104
+
+- name: ＢＳ日テレ
+  type: BS
+  channel: '14'
+  serviceId: 141
+
+- name: ＢＳ日テレ
+  type: BS
+  channel: '14'
+  serviceId: 142
+
+- name: ＢＳ朝日１
+  type: BS
+  channel: '0'
+  serviceId: 151
+
+- name: ＢＳ朝日２
+  type: BS
+  channel: '0'
+  serviceId: 152
+
+- name: ＢＳ－ＴＢＳ
+  type: BS
+  channel: '1'
+  serviceId: 161
+
+- name: ＢＳテレ東
+  type: BS
+  channel: '2'
+  serviceId: 171
+
+- name: ＢＳフジ・１８１
+  type: BS
+  channel: '15'
+  serviceId: 181
+
+- name: ＢＳ１１イレブン
+  type: BS
+  channel: '8'
+  serviceId: 211
 

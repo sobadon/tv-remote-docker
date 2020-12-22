@@ -1,14 +1,47 @@
 # https://github.com/Chinachu/Mirakurun/blob/master/doc/Configuration.md
 # BonDriverProxy(_Ex) を経由している場合はチャンネルスキャンが正常に完了しないため、TVTest の ch2 ファイルから予め手動で生成しておく
-# ここでは Server 側でデスクランブルされたものを受信する
+# ここでは Server 側でデスクランブルされていないものを受信する
 
-- name: Proxy-T_0
+- name: Proxy-W3PE4_T0
   types:
     - GR
-  command: recbond --driver /bdp/BonDriver_Proxy-T0.so B<channel> - -
-
-- name: Proxy-T_1
+  command: recbond --driver /bdp/BonDriver_Proxy-W3PE4-T0.so B<channel> - -
+  decoder: arib-b25-stream-test
+- name: Proxy-W3PE4_T1
   types:
     - GR
-  command: recbond --driver /bdp/BonDriver_Proxy-T1.so B<channel> - -
+  command: recbond --driver /bdp/BonDriver_Proxy-W3PE4-T1.so B<channel> - -
+  decoder: arib-b25-stream-test
+- name: Proxy-W3PE4_S0
+  types:
+    - BS
+    - CS
+  command: recbond --driver /bdp/BonDriver_Proxy-W3PE4-S0.so B<channel> - -
+  decoder: arib-b25-stream-test
+- name: Proxy-W3PE4_S1
+  types:
+    - BS
+    - CS
+  command: recbond --driver /bdp/BonDriver_Proxy-W3PE4-S1.so B<channel> - -
+  decoder: arib-b25-stream-test
+- name: Proxy-Q1UD_T0
+  types:
+    - GR
+  command: recbond --driver /bdp/BonDriver_Proxy-Q1UD-T0.so B<channel> - -
+  decoder: arib-b25-stream-test
+- name: Proxy-Q1UD_T1
+  types:
+    - GR
+  command: recbond --driver /bdp/BonDriver_Proxy-Q1UD-T1.so B<channel> - -
+  decoder: arib-b25-stream-test
+- name: Proxy-Q1UD_T2
+  types:
+    - GR
+  command: recbond --driver /bdp/BonDriver_Proxy-Q1UD-T2.so B<channel> - -
+  decoder: arib-b25-stream-test
+- name: Proxy-Q1UD_T3
+  types:
+    - GR
+  command: recbond --driver /bdp/BonDriver_Proxy-Q1UD-T3.so B<channel> - -
+  decoder: arib-b25-stream-test
 

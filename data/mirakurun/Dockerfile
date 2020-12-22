@@ -23,8 +23,8 @@ RUN cp BonDriver_Proxy.so BonDriver_Proxy-S.so
 #RUN sed -i "s/BONDRIVER=.*/BONDRIVER=PX-W3PE4_T/g" BonDriver_Proxy-T.so.conf
 #RUN sed -i "s/BONDRIVER=.*/BONDRIVER=PX-W3PE4_S/g" BonDriver_Proxy-S.so.conf
 
-# T0 - T3
-RUN for i in `seq 0 3` ; do cp BonDriver_Proxy-T.so BonDriver_Proxy-T${i}.so ; done 
+# T0 - T5
+RUN for i in `seq 0 5` ; do cp BonDriver_Proxy-T.so BonDriver_Proxy-T${i}.so ; done
 #RUN for i in `seq 0 3` ; do cp BonDriver_Proxy-T.so.conf BonDriver_Proxy-T${i}.so.conf ; done 
 
 # S0 - S3

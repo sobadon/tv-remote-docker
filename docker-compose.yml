@@ -14,6 +14,8 @@ services:
     ports:
       - 40772:40772
       - 9229:9229
+    devices:
+      - /dev/bus:/dev/bus
     volumes:
       - ./data/mirakurun/run/:/var/run/
       - ./data/mirakurun/opt/:/opt/

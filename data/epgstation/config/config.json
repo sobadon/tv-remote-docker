@@ -7,6 +7,8 @@
     "dbPath": "/app/db/database.db",
     "excludeServices": [],
     "maxEncode": 2,
+    "recPriority": 256,
+    "conflictPriority": 255,
     "encode": [
         {
             "name": "H264",

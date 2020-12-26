@@ -50,6 +50,7 @@ services:
       - ./data/epgstation/logs:/app/logs
       - epgstation-recorded:/app/recorded
       - ./data/epgstation/db:/app/db
+      - ./data/epgstation/rclone.conf:/config/rclone/rclone.conf
     environment:
       TZ: "Asia/Tokyo"
     depends_on:

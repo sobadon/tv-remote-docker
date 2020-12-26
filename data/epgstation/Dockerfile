@@ -1,3 +1,5 @@
+FROM rclone/rclone:1.53 AS rclone
+
 FROM l3tnun/epgstation:master-debian
 EXPOSE 8888
 ARG CPUCORE="1"
@@ -46,4 +48,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/ffmpeg_sources
+
+COPY --from=rclone /usr/local/bin/rclone /usr/local/bin
 

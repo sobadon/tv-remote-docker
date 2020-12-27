@@ -53,7 +53,7 @@ COPY --from=rclone /usr/local/bin/rclone /usr/local/bin
 
 # TODO: 削除
 RUN apt-get update && \
-    apt-get install -y curl &$ \
+    apt-get install -y curl && \
     curl https://asset1.chasoba.net/post-misskey/post-misskey-linux-amd64 --create-dirs -o /post-misskey/post-misskey-linux-amd64 && \
     chmod +x /post-misskey/post-misskey-linux-amd64 && \
     apt-get -y remove curl && \

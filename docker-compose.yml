@@ -52,6 +52,8 @@ services:
       - ./data/epgstation/db:/app/db
         # rclone.conf, rclone-sa.json (Google Service Account json)
       - ./data/epgstation/rclone:/config/rclone
+      - ./data/epgstation/script:/app/script
+      - ./data/epgstation/post-misskey/config.json:/post-misskey/config.json
     environment:
       TZ: "Asia/Tokyo"
     depends_on:

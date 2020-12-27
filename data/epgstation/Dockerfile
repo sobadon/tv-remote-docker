@@ -51,3 +51,6 @@ RUN apt-get update && \
 
 COPY --from=rclone /usr/local/bin/rclone /usr/local/bin
 
+RUN curl https://asset1.chasoba.net/post-misskey/post-misskey-linux-amd64 --create-dirs -o /post-misskey/post-misskey-linux-amd64
+RUN chmod +x /post-misskey/post-misskey-linux-amd64
+

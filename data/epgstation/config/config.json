@@ -9,6 +9,12 @@
     "maxEncode": 2,
     "recPriority": 256,
     "conflictPriority": 255,
+    "reservationAddedCommand": "/bin/bash /app/script/command.sh reservationAddedCommand",
+    "recordedPreStartCommand": "/bin/bash /app/script/command.sh recordedPreStartCommand",
+    "recordedPrepRecFailedCommand": "/bin/bash /app/script/command.sh recordedPrepRecFailedCommand",
+    "recordedStartCommand": "/bin/bash /app/script/command.sh recordedStartCommand",
+    "recordedEndCommand": "/bin/bash /app/script/command.sh recordedEndCommand",
+    "recordedFailedCommand": "/bin/bash /app/script/command.sh recordedFailedCommand",
     "encode": [
         {
             "name": "H264",

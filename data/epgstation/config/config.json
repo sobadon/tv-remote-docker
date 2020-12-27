@@ -14,7 +14,7 @@
             "name": "H264",
             "cmd": "%NODE% %ROOT%/config/enc.js",
             "suffix": ".mp4",
-            "default": true
+            "default": false
         }
     ],
     "recordedViewer": {
